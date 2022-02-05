@@ -3,7 +3,7 @@ buildscript {
     ext {
         hilt_version = "2.38.1"
         kotlin_version = "1.6.10"
-        navigationVersion = "2.3.5"
+        navigationVersion = "2.5.0-alpha01"
     }
     repositories {
         google()
