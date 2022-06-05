@@ -40,11 +40,11 @@ android {
 dependencies {
 
     // Android core
-    def core_version = "1.7.0"
+    def core_version = "1.8.0"
     implementation "androidx.core:core-ktx:$core_version"
 
     // AppCompat
-    def appcompat_version = "1.4.1"
+    def appcompat_version = "1.4.2"
     implementation "androidx.appcompat:appcompat:$appcompat_version"
 
     // Hilt
@@ -55,7 +55,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
 
     // Material components
-    def material_version = "1.6.0"
+    def material_version = "1.6.1"
     implementation "com.google.android.material:material:$material_version"
 
     // Navigation components
