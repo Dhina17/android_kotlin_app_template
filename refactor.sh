@@ -35,8 +35,12 @@ echo "Updating the package references with new package..."
 find $APP_DIR -type f -not -path '*/\.*' -exec sed -i "s/$TEMPLATE_PACKAGE/$NEW_PACKAGE/g" {} \;
 
 # Change the app name references in all files
-echo "Updating the app name references with new name "
+echo "Updating the app name references with new name..."
 find $ROOT_DIR -type f -not -path '*/\.*' -not -path '*.sh' -exec sed -i "s/$TEMPLATE_APP_NAME/$NEW_APP_NAME/g" {} \;
+
+# Remove README
+echo "Removing README.md..."
+rm README.md
 
 # Final
 echo "Done. Please sync the project manually!"
