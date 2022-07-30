@@ -42,5 +42,9 @@ find $ROOT_DIR -type f -not -path '*/\.*' -not -path '*.sh' -exec sed -i "s/$TEM
 echo "Removing README.md..."
 rm README.md
 
+# Remove the LICENSE file (It's fine with unlicense)
+echo "Removing LICENSE..."
+rm LICENSE
+
 # Final
 echo "Done. Please sync the project manually!"
