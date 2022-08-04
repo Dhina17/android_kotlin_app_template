@@ -3,6 +3,7 @@ set -e
 # Config
 TEMPLATE_PACKAGE="io.github.dhina17.template"
 TEMPLATE_APP_NAME="Template"
+DEFAULT_MIN_SDK="21"
 
 ROOT_DIR="."
 APP_DIR="$ROOT_DIR/app"
@@ -16,6 +17,10 @@ read -rp "Enter app name (ex: Notes): " NEW_APP_NAME
 
 # Read the package name
 read -rp "Enter package name (ex: io.github.dhina17.notes): " NEW_PACKAGE
+
+# Read the minimum SDK version
+read -rp "Enter minimum SDK version (default: 21):" MIN_SDK
+MIN_SDK="${MIN_SDK:=$DEFAULT_MIN_SDK}"
 
 # Create the package
 echo "Creating new package dir..."
@@ -37,6 +42,10 @@ find $APP_DIR -type f -not -path '*/\.*' -exec sed -i "s/$TEMPLATE_PACKAGE/$NEW_
 # Change the app name references in all files
 echo "Updating the app name references with new name..."
 find $ROOT_DIR -type f -not -path '*/\.*' -not -path '*.sh' -exec sed -i "s/$TEMPLATE_APP_NAME/$NEW_APP_NAME/g" {} \;
+
+# Update the app minimum SDK
+echo "Updating the app minimum SDK with $MIN_SDK..."
+sed -i "s/minSdkVersion 21/minSdkVersion $MIN_SDK/g" app/build.gradle
 
 # Remove README
 echo "Removing README.md..."
