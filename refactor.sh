@@ -1,6 +1,7 @@
 set -e
 
 # Config
+BASE_PACKAGE_ID="io.github.dhina17"
 TEMPLATE_PACKAGE="io.github.dhina17.template"
 TEMPLATE_APP_NAME="Template"
 DEFAULT_MIN_SDK="21"
@@ -34,6 +35,11 @@ cp -r $TEMPLATE_PACKAGE_DIR/. "$NEW_PACKAGE_DIR"
 # Remove the template package and files
 echo "Removing the template package dir..."
 rm -rf $TEMPLATE_PACKAGE_DIR
+
+# Remove entire base package if it doesn't match with new package
+if [[ $BASE_PACKAGE_ID != $(grep -o $BASE_PACKAGE_ID <<< $NEW_PACKAGE) ]]; then
+    rm -rf $KOTLIN_SRC_DIR/io
+fi
 
 # Change the package references in src
 echo "Updating the package references with new package..."
