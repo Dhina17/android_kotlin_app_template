@@ -10,6 +10,8 @@ android {
     compileSdkVersion 33
     buildToolsVersion "32.0.0"
 
+    namespace 'io.github.dhina17.template'
+
     defaultConfig {
         applicationId "io.github.dhina17.template"
         minSdkVersion 21
