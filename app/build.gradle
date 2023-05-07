@@ -42,7 +42,7 @@ android {
 dependencies {
 
     // Android core
-    def core_version = "1.9.0"
+    def core_version = "1.10.0"
     implementation "androidx.core:core-ktx:$core_version"
 
     // AppCompat
@@ -54,7 +54,7 @@ dependencies {
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
 
     // Material components
-    def material_version = "1.8.0"
+    def material_version = "1.9.0"
     implementation "com.google.android.material:material:$material_version"
 
     // Navigation components
