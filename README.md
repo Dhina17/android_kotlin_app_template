@@ -3,7 +3,7 @@ A starter template includes
 - MVVM
 - Navigation Component
 - Hilt
-- Data Binding
+- View Binding
 
 ## How to use this template?
 
