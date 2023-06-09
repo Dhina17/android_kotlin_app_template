@@ -20,7 +20,7 @@ jobs:
 
       # Sign the apk
       - name: Sign APK
-        uses: r0adkll/sign-android-release@v1
+        uses: Dhina17/sign-android-release@v1
         # ID used to access action output
         id: sign_app
         with:
