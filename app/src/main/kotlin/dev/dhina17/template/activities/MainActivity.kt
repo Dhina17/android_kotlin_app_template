@@ -1,9 +1,9 @@
-package io.github.dhina17.template.activities
+package dev.dhina17.template.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint
-import io.github.dhina17.template.databinding.ActivityMainBinding
+import dev.dhina17.template.databinding.ActivityMainBinding
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {

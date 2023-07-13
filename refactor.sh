@@ -1,8 +1,8 @@
 set -e
 
 # Config
-BASE_PACKAGE_ID="io.github.dhina17"
-TEMPLATE_PACKAGE="io.github.dhina17.template"
+BASE_PACKAGE_ID="dev.dhina17"
+TEMPLATE_PACKAGE="dev.dhina17.template"
 TEMPLATE_APP_NAME="Template"
 DEFAULT_MIN_SDK="21"
 
@@ -10,14 +10,14 @@ ROOT_DIR="."
 APP_DIR="$ROOT_DIR/app"
 APP_SRC_DIR="$APP_DIR/src/main"
 KOTLIN_SRC_DIR="$APP_SRC_DIR/kotlin"
-TEMPLATE_PACKAGE_DIR="$KOTLIN_SRC_DIR/io/github/dhina17/template"
+TEMPLATE_PACKAGE_DIR="$KOTLIN_SRC_DIR/dev/dhina17/template"
 
 ## Refactor the project name and package
 # Read the app name
 read -rp "Enter app name (ex: Notes): " NEW_APP_NAME
 
 # Read the package name
-read -rp "Enter package name (ex: io.github.dhina17.notes): " NEW_PACKAGE
+read -rp "Enter package name (ex: dev.dhina17.notes): " NEW_PACKAGE
 
 # Read the minimum SDK version
 read -rp "Enter minimum SDK version (default: 21):" MIN_SDK

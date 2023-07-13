@@ -1,4 +1,4 @@
-package io.github.dhina17.template
+package dev.dhina17.template
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
