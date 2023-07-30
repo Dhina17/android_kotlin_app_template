@@ -38,7 +38,7 @@ rm -rf $TEMPLATE_PACKAGE_DIR
 
 # Remove entire base package if it doesn't match with new package
 if [[ $BASE_PACKAGE_ID != $(grep -o $BASE_PACKAGE_ID <<< $NEW_PACKAGE) ]]; then
-    rm -rf $KOTLIN_SRC_DIR/io
+    rm -rf $KOTLIN_SRC_DIR/dev
 fi
 
 # Change the package references in src
@@ -51,7 +51,7 @@ find $ROOT_DIR -type f -not -path '*/\.*' -not -path '*.sh' -exec sed -i "s/$TEM
 
 # Update the app minimum SDK
 echo "Updating the app minimum SDK with $MIN_SDK..."
-sed -i "s/minSdkVersion 21/minSdkVersion $MIN_SDK/g" app/build.gradle
+sed -i "s/minSdk = 21/minSdk = $MIN_SDK/g" app/build.gradle.kts
 
 # Remove README
 echo "Removing README.md..."
