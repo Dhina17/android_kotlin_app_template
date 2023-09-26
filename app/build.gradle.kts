@@ -46,7 +46,7 @@ android {
 dependencies {
 
     // Core
-    implementation("androidx.core:core-ktx:1.10.1")
+    implementation("androidx.core:core-ktx:1.12.0")
 
     // AppCompat
     implementation("androidx.appcompat:appcompat:1.6.1")
@@ -59,7 +59,7 @@ dependencies {
     implementation("com.google.android.material:material:1.9.0")
 
     // Navigation
-    val navigationVersion = "2.6.0"
+    val navigationVersion = "2.7.3"
     implementation("androidx.navigation:navigation-fragment-ktx:$navigationVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navigationVersion")
 
