@@ -56,10 +56,10 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:2.46.1")
 
     // Material Design
-    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.material:material:1.10.0")
 
     // Navigation
-    val navigationVersion = "2.7.3"
+    val navigationVersion = "2.7.4"
     implementation("androidx.navigation:navigation-fragment-ktx:$navigationVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navigationVersion")
 
