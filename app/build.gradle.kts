@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace = "dev.dhina17.template"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "dev.dhina17.template"
         minSdk = 21
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
