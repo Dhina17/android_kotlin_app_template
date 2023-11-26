@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/navigation">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/emptyFragment">
 
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="dev.dhina17.template.ui.EmptyFragment"
+        android:label="EmptyFragment" />
 </navigation>
