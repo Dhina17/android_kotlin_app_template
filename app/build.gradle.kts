@@ -56,7 +56,7 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:2.48.1")
 
     // Material Design
-    implementation("com.google.android.material:material:1.10.0")
+    implementation("com.google.android.material:material:1.11.0")
 
     // Navigation
     val navigationVersion = "2.7.5"
