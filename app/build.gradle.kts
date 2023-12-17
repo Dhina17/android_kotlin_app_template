@@ -59,7 +59,7 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
 
     // Navigation
-    val navigationVersion = "2.7.5"
+    val navigationVersion = "2.7.6"
     implementation("androidx.navigation:navigation-fragment-ktx:$navigationVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navigationVersion")
 
