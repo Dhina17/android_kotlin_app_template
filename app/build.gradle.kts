@@ -52,14 +52,14 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
 
     // Hilt
-    implementation("com.google.dagger:hilt-android:2.48.1")
+    implementation("com.google.dagger:hilt-android:2.50")
     kapt("com.google.dagger:hilt-android-compiler:2.48.1")
 
     // Material Design
     implementation("com.google.android.material:material:1.11.0")
 
     // Navigation
-    val navigationVersion = "2.7.6"
+    val navigationVersion = "2.7.7"
     implementation("androidx.navigation:navigation-fragment-ktx:$navigationVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navigationVersion")
 
