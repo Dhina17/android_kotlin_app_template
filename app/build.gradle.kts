@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId = "dev.dhina17.template"
-        minSdk = 21
+        minSdk = 29
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"

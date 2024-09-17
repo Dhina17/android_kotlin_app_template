@@ -1,6 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No permission. Restart after granting..."
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        tools:text="Wifi Data usage" />
+
+    <TextView
+        android:id="@+id/wifiReceived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        tools:text="0.00 MB" />
+
+    <TextView
+        android:id="@+id/wifiSent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        tools:text="0.00 MB" />
+
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        tools:text="Mobile Data usage" />
+
+    <TextView
+        android:id="@+id/mobileReceived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        tools:text="0.00 MB" />
+
+    <TextView
+        android:id="@+id/mobileSent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        tools:text="0.00 MB" />
 
 </LinearLayout>
